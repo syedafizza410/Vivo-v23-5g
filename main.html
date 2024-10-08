@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Ecommerce Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="images/p1.webp" onclick="clickimg(this)">
+                    <img src="images/p7.webp" onclick="clickimg(this)">
+                    <img src="images/p4.webp" onclick="clickimg(this)">
+                    <img src="images/p5.webp" onclick="clickimg(this)">
+                    <img src="images/p2.webp" onclick="clickimg(this)">
+                    <img src="images/p6.webp" onclick="clickimg(this)">
+                    <img src="images/p3.webp" onclick="clickimg(this)">
+                </div>
+                <div class="main-images">
+                    <img src="images/p1.webp" id="imagebox">
+                </div>
+            </div>
+            </div>
+
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Vivo</p>
+                    <h2>Vivo V23 5G Sunshine Gold (8GB 128GB)</h2>
+                    <div class="review">
+                        <span>(5)</span>
+                        <i class="fa fa-star"></i>
+                    </div>
+
+                    <div class="price-box">
+                        <p class="price">PKR 92,999</p>
+                        <strike>PKR 99,999</strike>
+                    </div>
+
+                    <P>Size : <select name="size">
+                        <option value="select colour">select colour</option>
+                        <option value="black">Stardust black</option>
+                    </select></P>
+
+                    <P>Quantity <input type="text" value="1"></P>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to Cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-check"></span>
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script>
+    function clickimg(smallImg) {
+        var mainImage = document.getElementById("imagebox");
+
+        mainImage.src = smallImg.src;
+    }
+  </script>
+
+</body>
+</html>
