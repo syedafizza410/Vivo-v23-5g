@@ -124,6 +124,29 @@ button .fa{
     .text {
         padding-top: 50px;
     }
+    .all-images {
+        flex-direction: column;
+        height: auto;
+    }
+    .small-images {
+        flex-direction: row;
+        justify-content: space-evenly;
+        order: 1;
+        overflow-x: auto;
+        scrollbar-width: thin;
+    }
+    .product-box {
+        width: 100%;
+    }
+    .main-images img {
+        width: 100%;
+    }
+    .small-images img {
+        width: 25%;
+    }
+    h2 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -135,6 +158,8 @@ button .fa{
         flex-direction: row;
         justify-content: space-evenly;
         order: 1;
+        overflow-x: auto;
+        scrollbar-width: thin;
     }
     .product-box {
         width: 100%;
